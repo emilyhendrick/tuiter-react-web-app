@@ -1,0 +1,104 @@
+body {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 12px;
+  font-family: Lato;
+}
+
+.wd-page-title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.wd-bookmarks-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-bookmarks-handle {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+.wd-post-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+
+.wd-menu-icon {
+  height: 30px;
+  align-self: center;
+}
+
+.wd-post-border {
+  margin-top: 0px;
+}
+
+.wd-bookmarks-post-container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.wd-bookmarks-post-content {
+
+}
+
+.wd-bookmarks-post-image {
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: grey 1px solid;
+}
+
+.wd-post-article-container {
+  border: grey 1px solid;
+  border-radius: 30px;
+}
+
+.wd-article-grey-text {
+  max-width: 480px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.wd-article-title {
+  max-width: 480px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.wd-post-article-link-icon {
+  padding-right: 5px;
+  height: 10px;
+}
+
+.wd-post-icon {
+  height: 12px;
+  margin-right: 12px;
+}
+
+.wd-post-react-icons-container {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-post-react-item {
+  color: grey;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.wd-post-react-item-liked {
+  color: #F15252;
+  text-decoration: none;
+  font-size: 14px;
+}
+

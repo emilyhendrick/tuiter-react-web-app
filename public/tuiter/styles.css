@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+}
+
+.wd-border {
+  border-color: rgb(47, 51, 54);
+  margin: 0px;
+  border-width: thick;
+  border-style: solid;
+}
+
+.wd-grey-text {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+}
+
+.wd-post-border {
+  border-color: rgb(47, 51, 54);
+  clear: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.wd-title-white-text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  max-width: 506px;
+}
+
+.wd-p-white-text {
+  color: white;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  max-width: 506px;
+}
+
+.wd-p-grey-text {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 5px;'
+  max-width: 506px;'
+}
+
+.wd-heart-red {
+  color: #F15252;
+}
+
+

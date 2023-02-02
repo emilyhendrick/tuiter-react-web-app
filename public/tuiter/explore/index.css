@@ -44,6 +44,8 @@ ul {
 
 .wd-nav-link-div {
   float: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wd-nav-links {
@@ -51,8 +53,6 @@ ul {
   padding: 16px;
   text-decoration: none;
   font-size:15px;
-  position: relative;
-  display: inline-block;
   height: auto;
 }
 
@@ -105,3 +105,12 @@ ul {
   justify-content: space-between;
 }
 
+.wd-grey-bar {
+  background-color: #282c34;
+  height: 14px;
+  margin: 0px;
+  padding: 0px;
+  border-top: grey 2px solid;
+  border-bottom: grey 1px solid;
+  clear: left;
+}

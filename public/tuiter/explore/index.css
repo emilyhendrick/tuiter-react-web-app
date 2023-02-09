@@ -20,52 +20,55 @@ ul {
 .wd-search-bar-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 .wd-search-bar {
-  background-color: #474747;
+  background-color: white;
   color: #808080;
   width: 88%;
   border-radius: 50px;
-  height: 30px;
+  height: 40px;
   background-image: url('search-icon.png');
-  background-position: 20px 8px;
-  background-size: 15px;
+  background-position: 20px 10px;
+  background-size: 20px;
   background-repeat: no-repeat;
   padding-left: 55px;
-  margin-bottom: 15px;
-  border-style: hidden;
+  border: lightgrey 1px solid;
 }
 
 .wd-gear-icon {
-  height: 30px;
-  padding-left: 12px;
+  height: 40px;
 }
 
 .wd-nav-link-div {
   float: left;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  border-bottom: lightgrey 1px solid;
 }
 
 .wd-nav-links {
-  color:rgb(110, 118, 125);
+  color:rgb(29,161,242);
   padding: 16px;
   text-decoration: none;
   font-size:15px;
   height: auto;
+  white-space: nowrap;
 }
 
 .wd-highlighted-link {
-  color:rgb(29,161,242);
-  border-bottom: medium solid rgb(29,161,242);
+  color:rgb(110, 118, 125);
+  border: lightgrey 1px solid;
+  border-bottom: white 1px solid;
 }
 
 .wd-post-topic {
   color: rgb(110, 118, 125);
   font-size: 13px;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .wd-trending-list-item {
@@ -80,37 +83,79 @@ ul {
 }
 
 .wd-post-author {
-  color: white;
-  font-size: 13px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
   margin-top: 0px;
+  margin-bottom: 0px;
+  white-space: nowrap;
 }
 
 .wd-post-image {
   width: 100px;
   height: 100px;
-  margin-top: 0px;
+  margin: 12px;
   align-self: flex-end;
   border-radius: 15px;
 }
 
-.wd-post-border {
-  border-color: rgb(47, 51, 54);
-  clear: right;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
 
 .wd-single-post-container {
+  clear: left;
   display: flex;
   justify-content: space-between;
 }
 
-.wd-grey-bar {
-  background-color: #282c34;
-  height: 14px;
-  margin: 0px;
-  padding: 0px;
-  border-top: grey 2px solid;
-  border-bottom: grey 1px solid;
-  clear: left;
+.wd-follow-account-card {
+  display: flex;
+  justify-content: space-between;
 }
+
+.wd-black-icon-color {
+  color: black;
+}
+
+.wd-splash-image-container {
+  clear: both;
+  text-align: center;
+  position: relative;
+}
+
+.wd-splash-image {
+  width: 100%;
+  position: relative;
+}
+
+.wd-bottom-left-text {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  font-size: 40px;
+  color: white;
+}
+
+.wd-suggested-post-item {
+  border: lightgrey 1px solid;
+  width: 100%;
+}
+
+.wd-post-text {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.wd-account-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.wd-no-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+

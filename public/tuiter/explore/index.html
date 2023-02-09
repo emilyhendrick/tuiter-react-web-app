@@ -8,96 +8,208 @@
   <title>Document</title>
   <link href="../styles.css" rel="stylesheet"/>
   <link href="index.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet"/>
 </head>
-<body>
+<body class="mt-2">
 
-<!--- search bar --->
-<div class="wd-search-bar-container">
-  <input class="wd-search-bar" type="text" value="Search Tuiter">
-  <a href="explore-settings.html"><img class="wd-gear-icon" src="gear-icon.png"></a>
+<div class="row justify-content-center">
+  <div class="list-group col-xxl-2 col-xl-2 col-md-1 col-sm-1 ps-1 pe-1">
+    <i class="list-group-item fab fa-twitter wd-black-icon-color"></i>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-home"></i><span class="d-none d-xl-block ms-2"> Home</span>
+      </div>
+    </a>
+    <a href="index.html" class="list-group-item list-group-item-action active">
+      <div class="wd-no-wrap">
+        <i class="fa fa-hashtag"></i><span class="d-none d-xl-block ms-2"> Explore</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-bell"></i><span class="d-none d-xl-block ms-2"> Notifications</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-envelope"></i><span class="d-none d-xl-block ms-2"> Messages</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-bookmark"></i><span class="d-none d-xl-block ms-2"> Bookmarks</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-list"></i><span class="d-none d-xl-block ms-2"> Messages</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-user"></i><span class="d-none d-xl-block ms-2"> Profile</span>
+      </div>
+    </a>
+    <a href="#" class="list-group-item">
+      <div class="wd-no-wrap">
+        <i class="fa fa-minus-circle"></i><span class="d-none d-xl-block ms-2"> More</span>
+      </div>
+    </a>
+    <br>
+    <input class="btn btn-primary rounded-pill" type="button" value="Tuit">
+  </div>
+
+  <div class="wd-main-content-container col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-7">
+    <!--- search bar --->
+    <div class="wd-search-bar-container">
+      <input class="wd-search-bar" type="text" value="Search Tuiter">
+      <a href="explore-settings.html"><i class="fa fa-cog fa-2x"></i></a>
+    </div>
+    <!--- nav links --->
+    <div class="wd-nav-link-div">
+      <a href="for-you.html" class="wd-nav-links wd-highlighted-link">For you</a>
+      <a href="trending.html" class="wd-nav-links">Trending</a>
+      <a href="news.html" class="wd-nav-links">News</a>
+      <a href="sports.html" class="wd-nav-links">Sports</a>
+      <a href="entertainment.html" class="wd-nav-links d-none d-md-block">Entertainment</a>
+    </div>
+
+    <!--- suggested posts --->
+    <div class="wd-splash-image-container">
+      <img class="wd-splash-image mt-2"
+           src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"/>
+      <h3 class="wd-bottom-left-text">SpaceX's Starship</h3>
+    </div>
+
+    <ul class="ps-0">
+      <li class="wd-suggested-post-item">
+        <div class="wd-single-post-container">
+          <div class="mt-2 ms-2">
+            <p class="wd-post-topic">Web Development</p>
+            <p class="wd-post-author">ReactJS <i class="fa fa-check-circle"></i><span
+                class="wd-post-topic"> - 2h</span></p>
+            <p class="wd-post-text">React.js is a component based front end library that makes it
+              very easy to build Single Page Applications or SPAs</p>
+          </div>
+          <img class="wd-post-image" src="../../images/logo192.png">
+        </div>
+      </li>
+      <li class="wd-suggested-post-item">
+        <div class="wd-single-post-container">
+          <div class="mt-2 ms-2">
+            <p class="wd-post-author">JavaScript <i class="fa fa-check-circle"></i><span
+                class="wd-post-topic"> - 2h</span></p>
+            <p class="wd-post-text">Javascript is a programming language that can run on browsers as
+              well as desktops</p>
+            <p class="wd-post-topic">123K Tuits</p>
+          </div>
+          <img class="wd-post-image"
+               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+        </div>
+      </li>
+      <li class="wd-suggested-post-item">
+        <div class="wd-single-post-container">
+          <div class="mt-2 ms-2">
+            <p class="wd-post-topic">Web Development</p>
+            <p class="wd-post-author">jQuery</p>
+            <p class="wd-post-topic">123K Tuits</p>
+          </div>
+          <img class="wd-post-image"
+               src="https://www.chicagocomputerclasses.com/wp-content/uploads/2016/01/jquery.gif">
+        </div>
+      </li>
+      <li class="wd-suggested-post-item">
+        <div class="wd-single-post-container">
+          <div class="mt-2 ms-2">
+            <p class="wd-post-topic">Web Development</p>
+            <p class="wd-post-author">NodeJS <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">123K Tuits</p>
+          </div>
+          <img class="wd-post-image"
+               src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!--- who to follow --->
+  <div
+      class="wd-right-content-container col-xxl-3 col-xl-3 col-lg-3 d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none list-group">
+    <h3 class="list-group-item wd-post-author">Who To Follow</h3>
+    <div class="list-group-item">
+      <div class="wd-follow-account-card">
+        <div class="wd-follow-account-card">
+          <img class="wd-account-avatar"
+               src="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
+          <div class="ms-2">
+            <p class="wd-post-author">Java <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">@Java</p>
+          </div>
+        </div>
+        <input class="btn btn-primary rounded-pill" type="button" value="Follow">
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="wd-follow-account-card">
+        <div class="wd-follow-account-card">
+          <img class="wd-account-avatar"
+               src="https://res.cloudinary.com/crunchbase-production/image/upload/j3dbh6kok0dket3uz2vy"/>
+          <div class="ms-2">
+            <p class="wd-post-author">Relativity Space <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">@relativityspace</p>
+          </div>
+        </div>
+        <input class="btn btn-primary rounded-pill" type="button" value="Follow">
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="wd-follow-account-card">
+        <div class="wd-follow-account-card">
+          <img class="wd-account-avatar"
+               src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"/>
+          <div class="ms-2">
+            <p class="wd-post-author">Vigin Galactic <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">@virgingalactic</p>
+          </div>
+        </div>
+        <input class="btn btn-primary rounded-pill" type="button" value="Follow">
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="wd-follow-account-card">
+        <div class="wd-follow-account-card">
+          <img class="wd-account-avatar"
+               src="http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png"/>
+          <div class="ms-2">
+            <p class="wd-post-author">NASA <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">@NASA</p>
+          </div>
+        </div>
+        <input class="btn btn-primary rounded-pill" type="button" value="Follow">
+      </div>
+    </div>
+
+    <div class="list-group-item">
+      <div class="wd-follow-account-card">
+        <div class="wd-follow-account-card">
+          <img class="wd-account-avatar"
+               src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/800px-Tesla_T_symbol.svg.png"/>
+          <div class="ms-2">
+            <p class="wd-post-author">Tesla <i class="fa fa-check-circle"></i></p>
+            <p class="wd-post-topic">@Tesla</p>
+          </div>
+        </div>
+        <input class="btn btn-primary rounded-pill" type="button" value="Follow">
+      </div>
+    </div>
+  </div>
 </div>
-
-<!--- nav links --->
-<div class="wd-nav-link-div">
-  <a href="index.html" class="wd-nav-links wd-highlighted-link">For you</a>
-  <a href="#" class="wd-nav-links">Trending</a>
-  <a href="#" class="wd-nav-links">COVID-19</a>
-  <a href="#" class="wd-nav-links">News</a>
-  <a href="#" class="wd-nav-links">Sports</a>
-  <a href="#" class="wd-nav-links">Entertainment</a>
-</div>
-<div class="wd-grey-bar"></div>
-
-<!--- trending --->
-<ul>
-  <li class="wd-trending-list-item">
-    <p class="wd-post-topic">Trending in Science</p>
-    <p class="wd-title-white-text">Starship</p>
-    <p class="wd-post-topic">55.5K Tuits</p>
-  </li>
-  <li class="wd-trending-list-item">
-    <p class="wd-post-topic">Sports • Trending</p>
-    <p class="wd-title-white-text">Joe Rogan</p>
-    <p class="wd-post-topic">5,218 Tuits</p>
-  </li>
-</ul>
-<hr class="wd-post-border">
-
-<!--- suggested posts --->
-
-<ul>
-  <li class="wd-suggested-post-item">
-    <div class="wd-single-post-container">
-      <div class="wd-single-post-text-container">
-        <p class="wd-post-author">
-          <img class="wd-post-avatar"
-               src="https://static01.nyt.com/vi-assets/images/share/1200x1200_t.png">
-          The New York Times <span class="wd-post-topic"> • Yesterday</span>
-        </p>
-        <p class="wd-title-white-text">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-      </div>
-      <img class="wd-post-image" src="nyt-tuit-img.jpeg">
-    </div>
-    <hr class="wd-post-border">
-  </li>
-  <li class="wd-suggested-post-item">
-    <div class="wd-single-post-container">
-      <div class="wd-single-post-text-container">
-        <p class="wd-post-author">
-          <img class="wd-post-avatar"
-               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWdJ2NPRGiR3CltQFFoEDb-J0rUm7lT_9gmg&usqp=CAU">
-          Bloomberg Opinion <span class="wd-post-topic"> • Yesterday</span>
-        </p>
-        <p class="wd-title-white-text">Thinking about getting a booster? Read this first.</p>
-      </div>
-      <img class="wd-post-image"
-           src="https://cdn5-ss12.sharpschool.com/UserFiles/Servers/Server_1023780/Image/News.jpg">
-    </div>
-    <hr class="wd-post-border">
-  </li>
-  <li class="wd-suggested-post-item">
-    <div class="wd-single-post-container">
-      <div class="wd-single-post-text-container">
-        <p class="wd-post-topic">COVID-19</p>
-        <p class="wd-title-white-text">COVID-19: News and updates for Massachusetts</p>
-      </div>
-      <img class="wd-post-image"
-           src="https://www.statnews.com/wp-content/uploads/2022/07/AdobeStock_338718497-645x645.jpeg">
-    </div>
-    <hr class="wd-post-border">
-  </li>
-  <li class="wd-suggested-post-item">
-    <div class="wd-single-post-container">
-      <div class="wd-single-post-text-container">
-        <p class="wd-post-topic">Taylor Swift</p>
-        <p class="wd-title-white-text">#LavenderHazeMusicVideo</p>
-      </div>
-      <img class="wd-post-image"
-           src="https://images.genius.com/207afec16972f1405318f41472733f3a.1000x1000x1.jpg">
-    </div>
-    <hr class="wd-post-border">
-  </li>
-</ul>
 
 
 </body>

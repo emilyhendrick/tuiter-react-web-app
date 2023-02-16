@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   margin-left: 16px;
   margin-right: 16px;
   font-family: Lato;
@@ -32,7 +31,7 @@ ul {
   height: 40px;
   background-image: url('search-icon.png');
   background-position: 20px 10px;
-  background-size: 20px;
+  background-size: 15px;
   background-repeat: no-repeat;
   padding-left: 55px;
   border: lightgrey 1px solid;
@@ -46,11 +45,11 @@ ul {
   float: left;
   display: flex;
   width: 100%;
-  border-bottom: lightgrey 1px solid;
+  border-bottom: grey 1px solid;
 }
 
 .wd-nav-links {
-  color:rgb(29,161,242);
+  color: white;
   padding: 16px;
   text-decoration: none;
   font-size:15px;
@@ -65,7 +64,7 @@ ul {
 }
 
 .wd-post-topic {
-  color: rgb(110, 118, 125);
+  color: grey;
   font-size: 13px;
   margin-top: 0px;
   margin-bottom: 2px;
@@ -83,7 +82,7 @@ ul {
 }
 
 .wd-post-author {
-  color: black;
+  color: white;
   font-size: 15px;
   font-weight: bold;
   margin-top: 0px;
@@ -94,7 +93,7 @@ ul {
 .wd-post-image {
   width: 100px;
   height: 100px;
-  margin: 12px;
+  margin: 5px;
   align-self: flex-end;
   border-radius: 15px;
 }
@@ -134,13 +133,8 @@ ul {
   color: white;
 }
 
-.wd-suggested-post-item {
-  border: lightgrey 1px solid;
-  width: 100%;
-}
-
 .wd-post-text {
-  color: black;
+  color: white;
   font-size: 15px;
   font-weight: bold;
   margin-top: 0px;

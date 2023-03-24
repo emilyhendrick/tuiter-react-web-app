@@ -1,47 +1,18 @@
 import React from "react";
-import home from "../home";
-import explore from "../explore";
+import {NavLink} from "react-router-dom";
 
-const NavigationSidebar = (
-    {
-      active = 'home'
-    }
-) => {
+const NavigationSidebar = ()=> {
   return (
       <div className="list-group">
         <a className="list-group-item">Tuiter</a>
-        <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`} href={home}>
-          Home
-        </a>
-        <a className={`list-group-item
-                    ${active === 'explore' ? 'active' : ''}`} href={explore}>
-          Explore
-        </a>
-        <a className={`list-group-item
-                    ${active === 'notifications' ? 'active' : ''}`}>
-          Notifications
-        </a>
-        <a className={`list-group-item
-                    ${active === 'messages' ? 'active' : ''}`}>
-          Messages
-        </a>
-        <a className={`list-group-item
-                    ${active === 'bookmarks' ? 'active' : ''}`}>
-          Bookmarks
-        </a>
-        <a className={`list-group-item
-                    ${active === 'lists' ? 'active' : ''}`}>
-          Lists
-        </a>
-        <a className={`list-group-item
-                    ${active === 'profile' ? 'active' : ''}`}>
-          Profile
-        </a>
-        <a className={`list-group-item
-                    ${active === 'more' ? 'active' : ''}`}>
-          More
-        </a>
+        <NavLink to="/tuiter" end className={`list-group-item`}>Home</NavLink>
+        <NavLink to="exploreComp" className={`list-group-item`}>Explore</NavLink>
+        <a className={`list-group-item`}>Notifications</a>
+        <a className={`list-group-item`}>Messages</a>
+        <a className={`list-group-item`}>Bookmarks</a>
+        <a className={`list-group-item`}>Lists</a>
+        <a className={`list-group-item`}>Profile</a>
+        <a className={`list-group-item`}>More</a>
       </div>);
 };
 export default NavigationSidebar;

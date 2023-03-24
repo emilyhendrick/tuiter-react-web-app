@@ -1,19 +1,21 @@
 import React from "react";
+import home from "../home";
+import explore from "../explore";
 
 const NavigationSidebar = (
     {
-      active = 'explore'
+      active = 'home'
     }
 ) => {
   return (
       <div className="list-group">
         <a className="list-group-item">Tuiter</a>
         <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`}>
+                    ${active === 'home' ? 'active' : ''}`} href={home}>
           Home
         </a>
         <a className={`list-group-item
-                    ${active === 'explore' ? 'active' : ''}`}>
+                    ${active === 'explore' ? 'active' : ''}`} href={explore}>
           Explore
         </a>
         <a className={`list-group-item

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {tuitIsDisliked, tuitIsLiked, heartToggle} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
     {
@@ -14,6 +15,7 @@ const TuitStats = (
         "replies": 123,
         "retuits": 432,
         "likes": 432,
+        "dislikes": 432,
         "handle": "@spacex",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
       }
@@ -41,31 +43,39 @@ const TuitStats = (
     if (!handleTuit.liked) {
       dispatch(tuitIsDisliked(tuit));
       setLikes(likes + 1);
-    }
-    else {
+    } else {
       dispatch(tuitIsLiked(tuit));
       setLikes(likes - 1);
     }
 
   }
 
-  return(
-      <div  className={"row"}>
-        <div  className={"col-1 p-0"}>
+  return (
+      <div className={"row"}>
+        <div className={"col-1 p-0"}>
 
         </div>
-        <div  className={"col-10"}>
+        <div className={"col-11"}>
           <div className={"row mt-2 mb-2"}>
-            <div className={"col-3 mx-auto ps-3"}>
+            <div className={"col-2 mx-auto ps-3 pe-1"}>
               <i className="bi bi-chat"> {tuit.replies}</i>
             </div>
-            <div className={"col-3 mx-auto"}>
+            <div className={"col-2 mx-auto ps-2 pe-2"}>
               <i className={"bi bi-arrow-repeat"}> {tuit.retuits}</i>
             </div>
-            <div className={"col-3 mx-auto"}>
-              <a onClick={() => heartClickHandler(tuit)}><i className={`bi ${heartFill}`}> {likes}</i></a>
+            <div className={"col-3 mx-auto d-inline ps-1 pe-1"}>
+              <i onClick={() => dispatch(updateTuitThunk({
+                ...tuit,
+                likes: tuit.likes + 1
+              }))} className="bi bi-heart-fill me-2"> {tuit.likes}</i>
             </div>
-            <div className={"col-3 mx-auto"}>
+            <div className={"col-2 mx-auto d-inline ps-1 pe-1"}>
+              <i onClick={() => dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1
+              }))} className="bi bi-hand-thumbs-down-fill me-2"> {tuit.dislikes}</i>
+            </div>
+            <div className={"col-1 mx-auto ps-1 pe-1"}>
               <i className={"bi bi-share-fill"}></i>
             </div>
           </div>

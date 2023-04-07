@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {tuitIsDisliked, tuitIsLiked, heartToggle} from "./tuits-reducer";
+import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
@@ -36,17 +35,11 @@ const TuitStats = (
   const dispatch = useDispatch();
 
   const heartClickHandler = (handleTuit) => {
-    console.log(handleTuit);
-    dispatch(heartToggle(handleTuit));
     setHeartFill(determineHeartFill(!handleTuit.liked))
-
-    if (!handleTuit.liked) {
-      dispatch(tuitIsDisliked(tuit));
-      setLikes(likes + 1);
-    } else {
-      dispatch(tuitIsLiked(tuit));
-      setLikes(likes - 1);
-    }
+    dispatch(updateTuitThunk({
+      ...tuit,
+      likes: tuit.likes + 1
+    }))
 
   }
 
@@ -57,17 +50,14 @@ const TuitStats = (
         </div>
         <div className={"col-11"}>
           <div className={"row mt-2 mb-2"}>
-            <div className={"col-2 mx-auto ps-3 pe-1"}>
+            <div className={"col-3 mx-auto ps-3 pe-1"}>
               <i className="bi bi-chat"> {tuit.replies}</i>
             </div>
-            <div className={"col-2 mx-auto ps-2 pe-2"}>
+            <div className={"col-3 mx-auto ps-2 pe-2"}>
               <i className={"bi bi-arrow-repeat"}> {tuit.retuits}</i>
             </div>
             <div className={"col-3 mx-auto d-inline ps-1 pe-1"}>
-              <i onClick={() => dispatch(updateTuitThunk({
-                ...tuit,
-                likes: tuit.likes + 1
-              }))} className="bi bi-heart-fill me-2"> {tuit.likes}</i>
+              <i onClick={() => heartClickHandler(tuit)} className="bi bi-heart-fill me-2"> {tuit.likes}</i>
             </div>
             <div className={"col-2 mx-auto d-inline ps-1 pe-1"}>
               <i onClick={() => dispatch(updateTuitThunk({
